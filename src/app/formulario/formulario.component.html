@@ -1,0 +1,14 @@
+<input type="text" placeholder="Ingresa tu nombre" class="form-control" #name>
+
+<button class="btn btn-primary mt-2" (click)="mostrar_consola(name.value)">Mostrar en consola</button>
+
+<div class="alert alert-primary mt-4" *ngIf="OpenAlert; else mensaje">
+    <p>Mensaje en consola</p>
+    <button class="btn btn-danger" (click)="OpenAlert = false">X</button>
+</div>
+
+<ng-template #mensaje>
+    <div  class="alert alert-danger mt-4">
+        <p>Mensaje De prueba</p>
+    </div>
+</ng-template>
