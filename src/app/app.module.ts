@@ -9,7 +9,11 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
 import { FormPlantillaComponent } from './form-plantilla/form-plantilla.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { ChildrenComponent } from './children/children.component';
+import { AddMessagesComponent } from './add-messages/add-messages.component';
+import { ListMessagesComponent } from './list-messages/list-messages.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,16 @@ import { FormsModule } from '@angular/forms';
     FormularioComponent,
     BuclesComponent,
     SwitchComponent,
-    FormPlantillaComponent
+    FormPlantillaComponent,
+    FormReactiveComponent,
+    ChildrenComponent,
+    AddMessagesComponent,
+    ListMessagesComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
